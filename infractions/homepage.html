@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infractions</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #myIframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="myIframe" src="https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/sign-in" scrolling="auto">
+    </iframe>
+
+    <script>
+        window.onload = function() {
+            var iframe = document.getElementById('myIframe');
+            iframe.onload = function() {
+                var iframeURL = iframe.contentWindow.location.href;
+                if (!iframeURL.includes('infractionsroutieres.narsa.gov.ma')) {
+                    iframe.src = 'https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/sign-in';
+                }
+            };
+        };
+    </script>
+</body>
+</html>
