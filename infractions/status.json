@@ -4,5 +4,6 @@
     "currentVersion": 12,
     "isOpenAdsEnabled": true,
     "willRedirectUsersToInfractionsWeb": true,
-    "homepage_url": "https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/sign-in"
+    "infractionsUrl": "https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/sign-in",
+    "vignetteUrl": "https://play.google.com/store/apps/details?id=com.zineb.vignette"
 }
